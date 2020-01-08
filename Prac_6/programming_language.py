@@ -2,19 +2,21 @@
 
 
 class ProgrammingLanguage:
-    """Initialise a Language instance"""
+
     def __init__(self, name, typing, reflection, year):
+        """Initialise a Language instance"""
         self.name = name
         self.typing = typing
         self.reflection = reflection
         self.year = year
 
-    """To check language type is dynamic or not"""
     def is_dynamic(self):
+        """To check language type is dynamic or not"""
         if self.typing == "Dynamic":
             return True
 
-    """Modifications"""
-    def __str__(self):
-        return "{}, {} Typing, Reflection={}, First appeared in {}".format(
-            self.name, self.typing, self.reflection, self.year)
+
+def __str__(self):
+    """Return to the details of the output"""
+    return "{}, {} Typing, Reflection={}, First appeared in {}".format(
+        self.name, self.typing, self.reflection, self.year)
